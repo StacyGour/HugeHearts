@@ -15,6 +15,7 @@
     nav {
       background-color: #fbc2eb;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
       padding: 15px 0;
@@ -23,7 +24,7 @@
     nav a {
       color: #3d2c41;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 4vw;
     }
     nav a:hover {
       text-decoration: underline;
@@ -33,13 +34,24 @@
       text-align: center;
       padding: 40px 20px 20px;
     }
+    header img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+    }
     header h1 {
       margin: 0;
-      font-size: 2.8em;
+      font-size: 6vw;
       color: #3d2c41;
     }
+    header p {
+      font-size: 4vw;
+      line-height: 1.5;
+      margin: 10px auto;
+      max-width: 800px;
+    }
     .hearts {
-      font-size: 1.5em;
+      font-size: 4vw;
       color: #e60073;
       margin-bottom: 10px;
     }
@@ -50,6 +62,7 @@
     }
     h2 {
       color: #8e3b68;
+      font-size: 5vw;
     }
     .care-option {
       background-color: #fff0f7;
@@ -61,6 +74,7 @@
     }
     ul {
       line-height: 1.8;
+      font-size: 4vw;
     }
     .pricing {
       background-color: #f9f5f7;
@@ -76,13 +90,13 @@
       background-color: #ffe9ec;
       text-align: center;
       padding: 20px;
-      font-size: 1.1em;
+      font-size: 4vw;
     }
     footer {
       background-color: #fbc2eb;
       text-align: center;
       padding: 15px;
-      font-size: 0.95em;
+      font-size: 3.5vw;
     }
     .images {
       display: flex;
@@ -92,9 +106,21 @@
       margin-top: 20px;
     }
     .images img {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* Larger screens */
+    @media (min-width: 768px) {
+      nav a { font-size: 1.1em; }
+      header h1 { font-size: 2.8em; }
+      header p { font-size: 1.1em; }
+      .hearts { font-size: 1.5em; }
+      h2 { font-size: 2em; }
+      ul { font-size: 1em; }
+      .location { font-size: 1.1em; }
+      footer { font-size: 0.95em; }
     }
   </style>
 </head>
@@ -107,13 +133,13 @@
   </nav>
 
   <header>
-  <img src="logo.png" alt="My Logo" style="height: 400px;">
-    <div class="hearts">♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥</div>
+    <img src="logo.png" alt="My Logo">
+    <div class="hearts">♥♥♥♥♥♥♥♥♥♥♥♥♥♥</div>
     <h1>Huge Hearts Elderly Care Solutions</h1>
-        <p>We at Huge Hearts understand the Huge demands taking care of your loved ones has on you and your family 24/7.<br>
+    <p>We at Huge Hearts understand the Huge demands taking care of your loved ones has on you and your family 24/7.<br>
     Our goal and vision is to work alongside the families of our clients to make it an easy process for both client and relative.</p>
-  <p>Elderly care is not just a service—it's a responsibility rooted in respect, love, and dignity. As our loved ones age, they deserve attentive support that enhances their quality of life and honors their legacy. Huge Hearts is committed to delivering that care with empathy and excellence.</p>
-  <p>Our staff are the heart of Huge Hearts. Each member of our team is carefully selected, professionally trained, and genuinely passionate about caregiving. From certified nurses to dedicated support personnel, we foster a culture of compassion, reliability, and excellence to ensure your loved ones are always in safe and caring hands.</p>
+    <p>Elderly care is not just a service—it's a responsibility rooted in respect, love, and dignity. As our loved ones age, they deserve attentive support that enhances their quality of life and honors their legacy. Huge Hearts is committed to delivering that care with empathy and excellence.</p>
+    <p>Our staff are the heart of Huge Hearts. Each member of our team is carefully selected, professionally trained, and genuinely passionate about caregiving. From certified nurses to dedicated support personnel, we foster a culture of compassion, reliability, and excellence to ensure your loved ones are always in safe and caring hands.</p>
   </header>
 
   <footer>
@@ -121,3 +147,4 @@
   </footer>
 </body>
 </html>
+
